@@ -73,7 +73,7 @@ export default function AboutPage() {
                 alt="DHANRAJ DEWAJI PETKAR"
                 fill
                 sizes="(max-width: 768px) 100vw, 42vw"
-                className="w-full h-full object-cover object-[50%_18%] saturate-0 contrast-110 brightness-95 sepia-[0.18] group-hover:saturate-100 group-hover:sepia-0 group-hover:contrast-105 transition-all duration-1000 scale-105 group-hover:scale-100"
+                className="w-full h-full object-cover object-[50%_18%] md:saturate-0 md:contrast-110 md:brightness-95 md:sepia-[0.18] md:group-hover:saturate-100 md:group-hover:sepia-0 md:group-hover:contrast-105 transition-all duration-1000 scale-105 group-hover:scale-100"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent opacity-90" />
               <div className="absolute inset-0 ring-1 ring-white/10 pointer-events-none" />
@@ -140,7 +140,7 @@ export default function AboutPage() {
                      width={64}
                      height={64}
                      sizes="64px"
-                     className="h-full w-full object-cover object-[50%_18%] saturate-0 contrast-110 brightness-95 sepia-[0.18] group-hover:saturate-100 group-hover:sepia-0 group-hover:contrast-105 transition-all duration-700"
+                     className="h-full w-full object-cover object-[50%_18%] md:saturate-0 md:contrast-110 md:brightness-95 md:sepia-[0.18] md:group-hover:saturate-100 md:group-hover:sepia-0 md:group-hover:contrast-105 transition-all duration-700"
                    />
                  </div>
                  <span className="text-[10px] font-black uppercase tracking-[0.35em] text-primary/45">Finance</span>

@@ -118,7 +118,7 @@ export default function Home() {
                 alt="Strategic Accounting"
                 fill
                 sizes="(max-width: 768px) 100vw, 1200px"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100"
+                className="w-full h-full object-cover md:grayscale md:hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100"
               />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent flex items-end p-4 sm:p-6 md:p-12">
                  <div className="max-w-xl">
@@ -203,7 +203,7 @@ export default function Home() {
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       loading="lazy"
-                      className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 scale-105 group-hover:scale-100"
+                      className="w-full h-full object-cover md:grayscale opacity-90 md:group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 scale-105 group-hover:scale-100"
                     />
                     <div className="absolute inset-0 bg-primary/5 group-hover:opacity-0 transition-opacity pointer-events-none" />
                  </div>
