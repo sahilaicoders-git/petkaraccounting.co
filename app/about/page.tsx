@@ -130,8 +130,18 @@ export default function AboutPage() {
               <div className="bg-card/80 border border-border rounded-[2rem] overflow-hidden relative shadow-2xl p-8 md:p-10 group-hover:border-primary/30 transition-all h-full flex flex-col backdrop-blur-xl">
                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary/40 via-primary/15 to-transparent" />
                <div className="mb-8 relative flex items-center justify-between">
-                 <div className="h-16 w-16 rounded-2xl bg-secondary border border-border flex items-center justify-center shadow-inner">
-                   <TrendingUp className="h-8 w-8 text-primary/70" strokeWidth={1.5} />
+                 <div className="h-16 w-16 rounded-2xl border border-border overflow-hidden bg-secondary flex items-center justify-center shadow-inner">
+                   <div className="absolute h-16 w-16 bg-secondary flex items-center justify-center text-foreground/40 text-xs font-black tracking-wider">
+                     SP
+                   </div>
+                   <img
+                     src="/sahil-petkar.png"
+                     alt="SAHIL DHANRAJ PETKAR"
+                     onError={(e) => {
+                       e.currentTarget.style.display = 'none';
+                     }}
+                     className="h-full w-full object-cover object-[50%_18%] saturate-0 contrast-110 brightness-95 sepia-[0.18] group-hover:saturate-100 group-hover:sepia-0 group-hover:contrast-105 transition-all duration-700"
+                   />
                  </div>
                  <span className="text-[10px] font-black uppercase tracking-[0.35em] text-primary/45">Finance</span>
                </div>
