@@ -6,8 +6,6 @@ import {
   FileText, 
   ShieldCheck, 
   PieChart, 
-  BarChart3, 
-  Receipt, 
   Users, 
   ArrowUpRight,
   TrendingUp,

@@ -4,14 +4,10 @@ import { motion } from 'framer-motion';
 import { 
   ArrowRight, 
   CheckCircle2, 
-  ChevronRight, 
   FileText, 
   PieChart, 
   ShieldCheck, 
-  TrendingUp, 
-  ArrowUpRight,
-  Scale,
-  Users
+  ArrowUpRight
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -113,12 +109,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto border border-border bg-card p-1 sm:p-2 md:p-4 lg:p-6 rounded-[1.5rem] sm:rounded-[2rem] md:rounded-[2.5rem] relative">
             <div className="absolute inset-0 bg-primary/5 opacity-30 backdrop-blur-3xl" />
             <div className="relative aspect-[4/3] md:aspect-[21/9] w-full overflow-hidden border border-border rounded-2xl sm:rounded-3xl shadow-2xl">
+              <div className="md:hidden absolute inset-0 bg-gradient-to-br from-indigo-500/20 via-emerald-500/15 to-background" />
               <Image
                 src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=75&w=1800&auto=format&fit=crop"
                 alt="Strategic Accounting"
                 fill
                 sizes="(max-width: 768px) 100vw, 1200px"
-                className="w-full h-full object-cover md:grayscale md:hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100"
+                className="hidden md:block w-full h-full object-cover md:grayscale md:hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100"
               />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent flex items-end p-4 sm:p-6 md:p-12">
                  <div className="max-w-xl">
@@ -193,6 +190,13 @@ export default function Home() {
                    </div>
                  </div>
                  <div className="w-full md:w-1/2 aspect-[4/3] md:aspect-[4/3] rounded-[1.2rem] sm:rounded-[1.8rem] md:rounded-[2.5rem] overflow-hidden border border-border bg-card flex items-center justify-center relative group">
+                    <div className="md:hidden absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary to-background/20" />
+                    <div className="md:hidden relative z-10 flex flex-col items-center gap-3 text-center px-4">
+                      <div className="h-12 w-12 rounded-xl bg-card border border-border flex items-center justify-center">
+                        {service.icon}
+                      </div>
+                      <p className="text-sm font-bold text-foreground">{service.title}</p>
+                    </div>
                     <Image
                       src={idx === 0
                         ? "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=70&w=1200&auto=format&fit=crop"
@@ -203,7 +207,7 @@ export default function Home() {
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       loading="lazy"
-                      className="w-full h-full object-cover md:grayscale opacity-90 md:group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 scale-105 group-hover:scale-100"
+                      className="hidden md:block w-full h-full object-cover md:grayscale opacity-90 md:group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 scale-105 group-hover:scale-100"
                     />
                     <div className="absolute inset-0 bg-primary/5 group-hover:opacity-0 transition-opacity pointer-events-none" />
                  </div>

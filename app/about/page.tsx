@@ -3,18 +3,14 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { 
-  CheckCircle2, 
   Target, 
   Heart, 
   Quote, 
   Trophy, 
-  Users, 
-  ArrowUpRight,
   ShieldCheck,
   TrendingUp,
   Globe
 } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 export default function AboutPage() {
   return (

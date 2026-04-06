@@ -12,10 +12,8 @@ import {
   Zap,
   Lock
 } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 export default function ITRPage() {
-  const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     pan: '',
     phone: '',

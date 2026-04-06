@@ -1,9 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, MessageCircle, ArrowUpRight, Globe, CheckCircle2 } from 'lucide-react';
+import { Send, MessageCircle, Globe, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
-import { cn } from '@/lib/utils';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
