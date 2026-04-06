@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { 
   CheckCircle2, 
   Target, 
@@ -67,12 +68,11 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-secondary flex items-center justify-center text-foreground/40 text-6xl font-black tracking-tight">
                 DP
               </div>
-              <img 
-                src="/dhanraj-petkar.png" 
-                alt="DHANRAJ DEWAJI PETKAR" 
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
+              <Image
+                src="/dhanraj-petkar.png"
+                alt="DHANRAJ DEWAJI PETKAR"
+                fill
+                sizes="(max-width: 768px) 100vw, 42vw"
                 className="w-full h-full object-cover object-[50%_18%] saturate-0 contrast-110 brightness-95 sepia-[0.18] group-hover:saturate-100 group-hover:sepia-0 group-hover:contrast-105 transition-all duration-1000 scale-105 group-hover:scale-100"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent opacity-90" />
@@ -134,12 +134,12 @@ export default function AboutPage() {
                    <div className="absolute h-16 w-16 bg-secondary flex items-center justify-center text-foreground/40 text-xs font-black tracking-wider">
                      SP
                    </div>
-                   <img
+                   <Image
                      src="/sahil-petkar.png"
                      alt="SAHIL DHANRAJ PETKAR"
-                     onError={(e) => {
-                       e.currentTarget.style.display = 'none';
-                     }}
+                     width={64}
+                     height={64}
+                     sizes="64px"
                      className="h-full w-full object-cover object-[50%_18%] saturate-0 contrast-110 brightness-95 sepia-[0.18] group-hover:saturate-100 group-hover:sepia-0 group-hover:contrast-105 transition-all duration-700"
                    />
                  </div>
